@@ -37,7 +37,13 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { 
+        ...devices['Desktop Chrome'],
+        // Hide Playwright automation flags to bypass Cloudflare
+        launchOptions: {
+          args: ['--disable-blink-features=AutomationControlled']
+        }
+      },
     },
 
     {

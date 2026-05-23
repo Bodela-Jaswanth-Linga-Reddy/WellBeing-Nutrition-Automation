@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "login":"npx playwright test tests/login.spec.js --project=chromium --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

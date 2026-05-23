@@ -4,5 +4,8 @@ export const testData = {
         validUser: {
             phone: '7981947995'
         }
+    },
+    cart: {
+        couponCode: 'he5'
     }
 };
